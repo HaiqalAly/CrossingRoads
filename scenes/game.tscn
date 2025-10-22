@@ -33,6 +33,8 @@ texture = ExtResource("1_uwrxv")
 
 [node name="Area2D" type="Area2D" parent="Boundary"]
 position = Vector2(-177, -304)
+collision_layer = 0
+collision_mask = 2
 script = SubResource("GDScript_lbhrr")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Boundary/Area2D"]
@@ -41,6 +43,8 @@ shape = SubResource("RectangleShape2D_p57ef")
 debug_color = Color(0.2509804, 1, 0.29411766, 0.69803923)
 
 [node name="BoundaryWalls" type="StaticBody2D" parent="Boundary"]
+collision_layer = 8
+collision_mask = 0
 
 [node name="rightWall" type="CollisionShape2D" parent="Boundary/BoundaryWalls"]
 position = Vector2(194, -2)
