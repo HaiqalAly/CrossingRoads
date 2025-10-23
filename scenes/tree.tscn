@@ -3,15 +3,15 @@
 [ext_resource type="Texture2D" uid="uid://d0so81ys3820n" path="res://graphics/objects/tree1.png" id="1_gxjgo"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ovbhi"]
-size = Vector2(12, 19)
+size = Vector2(10, 19)
 
 [node name="Tree" type="StaticBody2D"]
 collision_mask = 0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(103, 42)
+position = Vector2(0, -12)
 texture = ExtResource("1_gxjgo")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(103, 40.5)
+position = Vector2(0, -13.5)
 shape = SubResource("RectangleShape2D_ovbhi")
