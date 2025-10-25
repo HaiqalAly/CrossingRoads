@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=3 uid="uid://cvwcvv5vn0pof"]
+[gd_scene load_steps=31 format=3 uid="uid://cvwcvv5vn0pof"]
 
 [ext_resource type="Script" uid="uid://cnhtc5860nj5h" path="res://script/game.gd" id="1_lbhrr"]
 [ext_resource type="Texture2D" uid="uid://doghmovcgeltw" path="res://graphics/map.png" id="1_uwrxv"]
@@ -17,6 +17,8 @@
 [ext_resource type="Texture2D" uid="uid://73gfa8tjrcik" path="res://graphics/objects/house3.png" id="15_ssvqc"]
 [ext_resource type="Texture2D" uid="uid://d0so81ys3820n" path="res://graphics/objects/tree1.png" id="16_264po"]
 [ext_resource type="Texture2D" uid="uid://oqgtp468wc6x" path="res://graphics/objects/sign.png" id="17_1kice"]
+[ext_resource type="Script" uid="uid://bbpihpe5x3pjv" path="res://script/score.gd" id="18_ssvqc"]
+[ext_resource type="FontFile" uid="uid://772371lci6of" path="res://fonts/PressStart2P-Regular.ttf" id="19_264po"]
 
 [sub_resource type="GDScript" id="GDScript_lbhrr"]
 script/source = "extends Area2D
@@ -300,6 +302,23 @@ position = Vector2(-192, -95)
 
 [node name="Marker2D9" type="Marker2D" parent="CarStartPosition"]
 position = Vector2(194, -118)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+script = ExtResource("18_ssvqc")
+
+[node name="Timer" type="Timer" parent="CanvasLayer"]
+autostart = true
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -30.5
+offset_top = 20.0
+offset_right = 30.5
+offset_bottom = 23.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("19_264po")
 
 [connection signal="body_entered" from="Boundary/Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="timeout" from="Timer/CarTimer" to="." method="_on_car_timer_timeout"]
