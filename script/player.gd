@@ -9,7 +9,7 @@ func _physics_process(_delta: float) -> void:
 	animation()
 	move_and_slide()
 	
-	if Input.is_action_just_pressed("s"):
+	if Input.is_action_just_pressed("confirm"):
 		print("Something")
 		
 func animation():

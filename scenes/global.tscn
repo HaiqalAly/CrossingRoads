@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://gwjjs0kesnmj"]
+
+[ext_resource type="Script" uid="uid://o4tyk5ifj3qf" path="res://script/global.gd" id="1_4pk28"]
+[ext_resource type="AudioStream" uid="uid://dmjyftxys4224" path="res://audio/356-8-bit-chiptune-game-music-357518.mp3" id="2_nmxvb"]
+
+[node name="Global" type="Node"]
+script = ExtResource("1_4pk28")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_nmxvb")
+volume_db = -8.0
+autoplay = true
+parameters/looping = true

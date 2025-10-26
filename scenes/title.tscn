@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://byrixhnvx4mo4"]
+[gd_scene load_steps=5 format=3 uid="uid://byrixhnvx4mo4"]
 
 [ext_resource type="FontFile" uid="uid://dr201ov4c76pb" path="res://fonts/Crackman.otf" id="1_4ignj"]
+[ext_resource type="Script" uid="uid://bngkpqrh8bg8c" path="res://script/title.gd" id="1_pyl7j"]
 [ext_resource type="Texture2D" uid="uid://bkgrir378horu" path="res://graphics/player/player_simple.png" id="2_wosw1"]
 [ext_resource type="FontFile" uid="uid://772371lci6of" path="res://fonts/PressStart2P-Regular.ttf" id="3_p6dhs"]
 
@@ -11,6 +12,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_pyl7j")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
@@ -38,6 +40,41 @@ theme_override_fonts/font = ExtResource("1_4ignj")
 theme_override_font_sizes/font_size = 120
 text = "Crossing Roads"
 
+[node name="Label2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -162.5
+offset_top = 118.25
+offset_right = 162.5
+offset_bottom = 143.25
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_p6dhs")
+theme_override_font_sizes/font_size = 25
+text = "High Score: 0"
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -166.0
+offset_top = -159.0
+offset_right = 170.0
+offset_bottom = -143.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("3_p6dhs")
+text = "PRESS \"SPACE\" TO PLAY"
+horizontal_alignment = 1
+
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 1
 anchors_preset = 8
@@ -52,20 +89,3 @@ offset_bottom = 60.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_wosw1")
-
-[node name="Label2" type="Label" parent="."]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -50.5
-offset_top = 250.0
-offset_right = 50.5
-offset_bottom = 11.5
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_fonts/font = ExtResource("3_p6dhs")
-theme_override_font_sizes/font_size = 25
-text = "High Score: 0"
