@@ -1,7 +1,6 @@
 # 👾 Crossing Roads
 
 [![Play on Itch.io](https://img.shields.io/badge/Itch.io-FA5C5C?style=for-the-badge&logo=itchdotio&logoColor=white)](https://halzamy.itch.io/crossingroads)
-
 [![Godot](https://img.shields.io/badge/Godot-478CBF?style=for-the-badge&logo=GodotEngine&logoColor=white)](https://godotengine.org/)
 [![Udemy - Learn to Code by Making Games in Godot](https://img.shields.io/badge/Udemy-In%20Progress-A435F0?style=for-the-badge&logo=Udemy&logoColor=white)](https://www.udemy.com/course/learn-to-code-by-making-games-in-godot/)
 
