@@ -31,3 +31,9 @@ While creating this project, I learned several important Godot concepts:
 ## 📋 Notes
 This project is just a personal learning exercise to understand the full process of making and publishing a game.  
 I know it’s simple, but I hope it serves as a foundation for building more advanced projects in the future.
+
+## 📢 Asset License Notice
+This project does **not** use a formal license.  
+However, you are free to **read, learn from, and reuse the code** in your own projects.
+
+The art and audio assets used here come from a Udemy course and their license is **not specified**, so they are included for educational purposes only and **may not be redistributed, reused, or relicensed**.
